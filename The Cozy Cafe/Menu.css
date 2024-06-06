@@ -1,0 +1,149 @@
+/*exp internet*/
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box-sizing;
+}
+body{
+	height: 100vh;
+	width: device-width;
+	background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("laptop.jpeg") 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeater;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 80px;
+}
+.nav-bar .title{
+	color: #fff;
+	font-size: 67px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.nav-bar p{
+	position: absolute;
+	margin-top: 90px;
+	margin-left: 50px;
+	color: #fff;
+	font-size:20px;
+	font-weight: 500;
+}
+span{
+	color: crimson;
+}
+
+.Menu li{
+	list-style: none;
+	display: inline-block;
+}
+.Menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 27px;
+	font-weight: 600;
+	margin-left: 25px;
+}
+.Menu li a:hover{
+	color: crimson;
+	padding:5px 10px;
+	border: 2px solid #fff;
+}
+#title-1{
+	font-size: 56px;
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+}
+#menu{
+	padding: 25px 0 25px 0;
+}
+#menu_row{
+	display: flex;
+	padding: 0 100px 0 100px;
+}
+#menu_col{
+	box-shadow: 2px 2px 2px #bbb;
+	border: 1px solid #bbb;
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	flex: 1;
+}
+#menu_col h2{
+	background-color: red;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+}
+#image{
+	width: 150px;
+	height : 150px;
+	border-radius: 50%;
+	padding: 5px;
+}
+#image img{
+	display: flex;
+	width: 100%;
+	height : 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+#image button{
+	height: 150px;
+	color: #fff;
+	background: none;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#image button:hover{
+	background: none;
+	border: 2px solid crimson;
+}
+.card-body i{
+	color:yellow;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 5px;
+}
+footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	width: device-width;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.mobile_menu{
+		display: block;
+	}
+	.nav-bar ul{
+		display: none;
+	}
+	html{
+		font-size: 95%;
+	}
+	.menu_row{
+		flex-wrap: wrap;
+		padding: 0 10px 0 10px;
+	}
+}
+@media screen and (max-width : 360px){
+	html{
+		font-size: 70%;
+	}
+}		
